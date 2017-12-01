@@ -27,8 +27,8 @@ public class ContactActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    GMailSender sender = new GMailSender("daniel.matienzo.iriarte@gmail.com",
-                            "13Princesitas13.");
+                    GMailSender sender = new GMailSender("aaa@gmail.com",
+                            "<password>");
                     sender.sendMail("This is Subject", "This is Body",
                             "daniel.matienzo.iriarte@gmail.com", "daniel.matienzo.iriarte@gmail.com");
                     Toast.makeText(ContactActivity.this, "Email enviado con exito", Toast.LENGTH_LONG).show();
