@@ -27,7 +27,7 @@ public class ContactActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    GMailSender sender = new GMailSender("aaa@gmail.com",
+                    GMailSender sender = new GMailSender("<account>@gmail.com",
                             "<password>");
                     sender.sendMail("This is Subject", "This is Body",
                             "daniel.matienzo.iriarte@gmail.com", "daniel.matienzo.iriarte@gmail.com");
